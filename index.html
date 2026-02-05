@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECX 6.0 Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main id="app-container">
+        <section id="start-screen" class="card">
+            <header>
+                <h1>Web Dev Challenge</h1>
+                <p>Test your knowledge of HTML, CSS, and JS!</p>
+            </header>
+            <button id="start-btn" class="primary-btn">Start Quiz</button>
+        </section>
+
+        <section id="quiz-screen" class="card hidden">
+            <div id="progress">Question 1 of 5</div>
+            <h2 id="question-text">Question text goes here?</h2>
+            <div id="answer-options" class="options-grid">
+                </div>
+        </section>
+
+        <section id="result-screen" class="card hidden">
+            <h2>Quiz Finished!</h2>
+            <p id="score-text"></p>
+            <button id="restart-btn" class="primary-btn">Try Again</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
