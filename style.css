@@ -1,0 +1,78 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #034bdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px; /* Responsive: won't exceed 500px on desktop */
+    text-align: center;
+}
+
+#question-text {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.options-grid {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px;
+    border: 2px solid #007bff;
+    background: white;
+    color: #007bff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover:not(:disabled) {
+    background: #007bff;
+    color: white;
+}
+
+.primary-btn {
+    background: #007bff;
+    color: white;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+
+.correct {
+    background-color: #28a745 !important;
+    color: white !important;
+    border-color: #28a745 !important;
+}
+
+.wrong {
+    background-color: #dc3545 !important;
+    color: white !important;
+    border-color: #dc3545 !important;
+}
